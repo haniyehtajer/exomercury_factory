@@ -1,0 +1,72 @@
+Compiling shared library librebound.so ...
+make -C ../../src/
+make[1]: Entering directory '/home/tajer.1/rebound/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/tajer.1/rebound/src'
+
+Compiling problem.c ...
+cc -I../../src/ -Wl,-rpath,./ -std=c99 -Wpointer-arith -D_GNU_SOURCE -O3 -fPIC -Wall -g  -Wno-unknown-pragmas -DSERVER -DGITHASH=43ef9728cb35df03689de4a63959dd6a228b697c problem.c -L. -lrebound -lm -lrt -o rebound
+problem.c: In function ‘add_fragments’:
+problem.c:161:27: warning: ‘%d’ directive writing between 1 and 11 bytes into a region of size 6 [-Wformat-overflow=]
+         sprintf(hash,"FRAG%d", tot_no_frags+1);
+                           ^~
+problem.c:161:22: note: directive argument in the range [-2147483647, 2147483647]
+         sprintf(hash,"FRAG%d", tot_no_frags+1);
+                      ^~~~~~~~
+problem.c:161:9: note: ‘sprintf’ output between 6 and 16 bytes into a destination of size 10
+         sprintf(hash,"FRAG%d", tot_no_frags+1);
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Compilation successful. To run REBOUND, execute the file 'rebound'.
+
+N_tot=  157       t=  0.000000  dt=  0.016438  cpu=  0.000000 [s]  Walltime(s) = 0.000000 
+N_tot=  157       t=  100.010959  dt=  0.016438  cpu=  3.243843 [s]  Walltime(s) = 3.222510 
+N_tot=  157       t=  200.005479  dt=  0.016438  cpu=  3.290911 [s]  Walltime(s) = 6.494957 
+N_tot=  157       t=  300.016438  dt=  0.016438  cpu=  3.300656 [s]  Walltime(s) = 9.777937 
+N_tot=  157       t=  400.010959  dt=  0.016438  cpu=  3.303721 [s]  Walltime(s) = 13.063235 
+N_tot=  157       t=  500.005479  dt=  0.016438  cpu=  3.346669 [s]  Walltime(s) = 16.392033 
+N_tot=  157       t=  600.016438  dt=  0.016438  cpu=  3.340549 [s]  Walltime(s) = 19.714777 
+N_tot=  157       t=  700.010959  dt=  0.016438  cpu=  3.403945 [s]  Walltime(s) = 23.100592 
+N_tot=  157       t=  800.005479  dt=  0.016438  cpu=  3.399103 [s]  Walltime(s) = 26.480590 
+N_tot=  157       t=  900.016438  dt=  0.016438  cpu=  3.410135 [s]  Walltime(s) = 29.872660 
+TIME OF COLLISION: 9.114564e+02
+Target hash, mass = 9 2.800000e-07
+Projectile hash, mass = 93 2.800000e-08
+Mp/Mt:    0.1000
+Mlr/Mt:    1.0835
+Mlr/Mtot:    0.9850
+b/Rtarg:     0.5938
+Vimp/Vesc:     1.0888
+Q/ Qstar:     0.0300
+COLLISION TYPE: EFFECTIVELY MERGED
+N_tot=  156       t=  1000.010959  dt=  0.016438  cpu=  3.365218 [s]  Walltime(s) = 33.219885 
+N_tot=  156       t=  1100.005479  dt=  0.016438  cpu=  3.362848 [s]  Walltime(s) = 36.564680 
+N_tot=  156       t=  1200.016438  dt=  0.016438  cpu=  3.367156 [s]  Walltime(s) = 39.913827 
+N_tot=  156       t=  1300.010959  dt=  0.016438  cpu=  3.374674 [s]  Walltime(s) = 43.270504 
+N_tot=  156       t=  1400.005479  dt=  0.016438  cpu=  3.370800 [s]  Walltime(s) = 46.623308 
+N_tot=  156       t=  1500.016438  dt=  0.016438  cpu=  3.376926 [s]  Walltime(s) = 49.982265 
+N_tot=  156       t=  1600.010959  dt=  0.016438  cpu=  3.376093 [s]  Walltime(s) = 53.340419 
+N_tot=  156       t=  1700.005479  dt=  0.016438  cpu=  3.367169 [s]  Walltime(s) = 56.689562 
+N_tot=  156       t=  1800.016438  dt=  0.016438  cpu=  3.378850 [s]  Walltime(s) = 60.050380 
+N_tot=  156       t=  1900.010959  dt=  0.016438  cpu=  3.372103 [s]  Walltime(s) = 63.404443 
+N_tot=  156       t=  2000.005479  dt=  0.016438  cpu=  3.378937 [s]  Walltime(s) = 66.765357 
+N_tot=  156       t=  2100.016438  dt=  0.016438  cpu=  3.379940 [s]  
+[1mError![0m TRACE does not support adding particles mid-timestep
+
+
+[1mError![0m TRACE does not support adding particles mid-timestep
+
+
+[1mError![0m TRACE does not support adding particles mid-timestep
+
+
+[1mError![0m TRACE does not support adding particles mid-timestep
+
+
+[1mError![0m TRACE does not support adding particles mid-timestep
+
+
+[1mError![0m TRACE does not support adding particles mid-timestep
+
+corrupted double-linked list
+/var/spool/slurmd/job8343561/slurm_script: line 19: 1223165 Aborted                 (core dumped) ./rebound
